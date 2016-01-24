@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textSize="20dp"
+                android:id="@+id/refresh_title"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/refresh_title"
+                android:text="pH"
+                android:textSize="30dp"
+                android:gravity="center_horizontal"
+                android:id="@+id/item_ph_title"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_ph_title"
+                android:id="@+id/ph_chart_layout" >
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/ph_chart_progress"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_height="10dp"
+                android:layout_width="match_parent"
+                android:layout_below="@id/ph_chart_layout"
+                android:background="#d8d8d8"
+                android:id="@+id/separator1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/separator1"
+                android:text="Turbidity"
+                android:textSize="30dp"
+                android:gravity="center_horizontal"
+                android:id="@+id/item_turbidity_title"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_turbidity_title"
+                android:id="@+id/turbidity_chart_layout" >
+
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/turbidity_chart_progress"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_height="10dp"
+                android:layout_width="match_parent"
+                android:layout_below="@id/turbidity_chart_layout"
+                android:background="#d8d8d8"
+                android:id="@+id/separator2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/separator2"
+                android:text="Temperature"
+                android:textSize="30dp"
+                android:gravity="center_horizontal"
+                android:id="@+id/item_temp_title"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_temp_title"
+                android:id="@+id/temp_chart_layout">
+
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/temp_chart_progress"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_height="10dp"
+                android:layout_width="match_parent"
+                android:layout_below="@id/temp_chart_layout"
+                android:background="#d8d8d8"
+                android:id="@+id/separator3"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/separator3"
+                android:text="Depth"
+                android:textSize="30dp"
+                android:gravity="center_horizontal"
+                android:id="@+id/item_depth_title"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_depth_title"
+                android:id="@+id/depth_chart_layout">
+
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/depth_chart_progress"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
